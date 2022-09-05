@@ -4,6 +4,9 @@ brain-games:
 brain-even:
 	poetry run brain-even
 
+shell:
+	poetry shell
+
 build:
 	poetry build
 
