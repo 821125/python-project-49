@@ -3,3 +3,4 @@
 
 brain-even demo: https://asciinema.org/a/A992XgYaXSbD2gc0HAmGTaKBj
 brain-calc demo: https://asciinema.org/a/YfR9rddkxy6Q2ZTXgxzEKrzbg
+brain-gcd demo: https://asciinema.org/a/JfMRjobklMTvZzRHt3AMz4Fou

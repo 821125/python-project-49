@@ -4,6 +4,12 @@ brain-games:
 brain-even:
 	poetry run brain-even
 
+brain-calc:
+	poetry run brain-calcmak
+
+brain-gcd:
+	poetry run brain-gcd
+
 shell:
 	poetry shell
 
