@@ -1,5 +1,5 @@
 #!/usr/bin/env pyhton3
-from brain_games.cli import get_progression, greeting, welcome_user
+from brain_games.cli import greeting, welcome_user, is_prime
 from random import randint
 
 
@@ -8,17 +8,14 @@ def main():
     greeting()
     name = welcome_user()
 
-    print('What number is missing in the progression?')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
     count = 0
     while count < 3:
-        progression = get_progression()
-        index_answer = randint(2, 7)
-        true_answer = progression[index_answer]
-        progression[index_answer] = '..'
-        question = ' '.join(progression)
-        print(f'Question: {question}')
-        answer = input('Your answer: ')
+        number = randint(1, 99)
+        print(f'Question: {number}')
+        answer = input('Your answer: ').lower()
+        true_answer = ('no', 'yes')[is_prime(number)]
         if answer == true_answer:
             print("Correct!")
             count += 1

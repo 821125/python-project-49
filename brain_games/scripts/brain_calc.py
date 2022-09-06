@@ -21,7 +21,7 @@ def main():
             print("Correct!")
             count += 1
         else:
-            print(f"{answer}' is wrong answer ;(. Correct answer was '{true_answer}'.")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{true_answer}'.")
             print(f"Let's try, again, {name}!")
 
     print(f'Congratulations, {name}!')
