@@ -14,19 +14,20 @@ def main():
     while count < 3:
         progression = get_progression()
         index_answer = randint(2, 7)
-        true_answer = progression[index_answer]
+        tr_ans = progression[index_answer]
         progression[index_answer] = '..'
         question = ' '.join(progression)
         print(f'Question: {question}')
-        answer = input('Your answer: ')
-        if answer == true_answer:
+        ans = input('Your answer: ')
+        if ans == tr_ans:
             print("Correct!")
             count += 1
         else:
-            print(f"{answer}' is wrong answer ;(. Correct answer was '{true_answer}'.")
-            print(f"Let's try, again, {name}!")
-
-    print(f'Congratulations, {name}!')
+            print(f"'{ans}' is wrong answer ;(. Correct answer was '{tr_ans}'.")
+            print(f"Let's try again, {name}!")
+            break
+    else:
+        print(f'Congratulations, {name}!')
 
 
 if __name__ == "__main__":

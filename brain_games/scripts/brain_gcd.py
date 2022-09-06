@@ -15,16 +15,17 @@ def main():
     while count < 3:
         num1, num2 = randint(1, 99), randint(1, 99)
         print(f'Question: {num1} {num2}')
-        answer = int(input('Your answer: '))
-        true_answer = gcd(num1, num2)
-        if answer == true_answer:
+        ans = int(input('Your answer: '))
+        tr_ans = gcd(num1, num2)
+        if ans == tr_ans:
             print("Correct!")
             count += 1
         else:
-            print(f"{answer}' is wrong answer ;(. Correct answer was '{true_answer}'.")
-            print(f"Let's try, again, {name}!")
-
-    print(f'Congratulations, {name}!')
+            print(f"'{ans}' is wrong answer ;(. Correct answer was '{tr_ans}'.")
+            print(f"Let's try again, {name}!")
+            break
+    else:
+        print(f'Congratulations, {name}!')
 
 
 if __name__ == "__main__":
